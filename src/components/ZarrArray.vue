@@ -14,10 +14,10 @@
         </thead>
         <tbody>
           <tr>
-            <th>shape</th><td v-for="s in shape">{{ s }}</td>
+            <th>shape</th><td v-for="s in shape" :key="s">{{ s }}</td>
           </tr>
           <tr>
-            <th>chunks</th><td v-for="c in chunks">{{ c }}</td>
+            <th>chunks</th><td v-for="c in chunks" :key="c">{{ c }}</td>
           </tr>
         </tbody>
       </table>
